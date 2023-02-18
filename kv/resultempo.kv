@@ -1,0 +1,47 @@
+<ResulTempo>:
+    FloatLayout:
+        canvas:
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source: 'icones/fundo_tela01.jpg'
+        Label:
+            canvas.before:
+                Color:
+                    rgb: utils.get_color_from_hex('#024496')
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {'right': 0.75, 'top': 0.98}
+            size_hint: 0.5, 0.1
+            bold: True
+            text: 'TEMPO AGORA'
+            id: id_tempo_agora
+
+        Label:
+            canvas.before:
+                Color:
+                    rgb: utils.get_color_from_hex('#024496')
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {'right': 0.75, 'top': 0.78}
+            size_hint: 0.5, 0.1
+            bold: True
+
+
+        #botão de voltar para primeira tela
+        FloatLayout:
+            pos_hint: {'rigth': 1, 'top': 0.12}
+            size_hint: 1, 0.12
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex('#024496')
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            ImageButton:
+                pos_hint: {'right': 0.2, 'top': 0.9}
+                size_hint: 0.2, 0.8
+                source: 'icones/botao_voltar01.png'
+                on_release: app.mudar_tela('tempoagora')
