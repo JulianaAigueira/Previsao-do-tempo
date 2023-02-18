@@ -1,0 +1,26 @@
+#:include kv/tempoagora.kv
+#:include kv/resultempo.kv
+#:import utils kivy.utils
+
+FloatLayout:
+    canvas:
+        Color:
+            rgb: utils.get_color_from_hex('#031134')
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Image:
+        pos_hint: {'right': 1, 'top': 0.9}
+        size_hint: 1, 0.2
+        source: 'icones/fundo_tela02.jpg'
+    ScreenManager:
+        pos_hint: {'right': 1, 'top': 0.7}
+        size_hint: 1, 0.7
+        id: screen_manager
+        TempoAgora:
+            name: 'tempoagora'
+            id: tempoagora
+
+        ResulTempo:
+            name: 'resultempo'
+            id: resultempo
