@@ -1,0 +1,42 @@
+<TempoAgora>:
+    FloatLayout:
+        canvas:
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source: 'icones/fundo_tela01.jpg'
+        Label:
+            canvas.before:
+                Color:
+                    rgb: utils.get_color_from_hex('#024496')
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            pos_hint: {'right': 0.75, 'top': 0.98}
+            size_hint: 0.5, 0.1
+            bold: True
+            text: 'Digite a cidade'
+
+        TextInput:
+            id: cidade
+            hint_text: 'cidade'
+            pos_hint: {'right': 0.73, 'top': 0.7}
+            size_hint: 0.45, 0.1
+
+        #botão de ir para segunda tela
+        FloatLayout:
+            pos_hint: {'rigth': 1, 'top': 0.12}
+            size_hint: 1, 0.12
+            canvas:
+                Color:
+                    rgb: utils.get_color_from_hex('#024496')
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            ImageButton:
+                pos_hint: {'right': 0.95, 'top': 0.98}
+                size_hint: 0.9, 0.9
+                source: 'icones/botão01.png'
+                on_release: app.digitar_cidade(cidade.text)
+                on_release: app.mudar_tela('resultempo')
+                id: resposta
