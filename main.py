@@ -5,6 +5,9 @@
 
 from kivy.app import App
 from kivy.lang import Builder
+from telas import *
+from botoes import *
+from api_tempo import *
 import requests
 
 # mostra para Builder o arquivo que ele vai ter que ler
