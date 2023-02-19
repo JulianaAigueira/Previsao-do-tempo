@@ -6,12 +6,13 @@ A próxima tela mostra a requisição que a API  retorno.
 
 TELA INICIAL:
 
-![image](https://user-images.githubusercontent.com/121833579/219884909-f0d58792-d01f-46f4-bcf4-b51a68e4a92b.png)
+![image](https://user-images.githubusercontent.com/121833579/219974094-06affafa-e666-407d-a4ac-05b7f69eaf25.png)
 
 
 SEGUNDA TELA:
 
-![image](https://user-images.githubusercontent.com/121833579/219884979-c230d44a-5f30-4d20-b9ba-109fd101af60.png)
+![image](https://user-images.githubusercontent.com/121833579/219974048-49ce4f18-36e3-4287-8978-4be8600fd6db.png)
+
 
 
 
